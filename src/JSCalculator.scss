@@ -1,0 +1,67 @@
+body{
+    margin:0;
+}
+#root{
+    height:100vh;
+    background-color:steelblue;
+}
+#calculator-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#calculator{
+    height:500px;
+    width:300px;
+    background-color:black;
+    border: 10px black solid;
+    border-radius: 5px;
+}
+#displayNumbers{
+    font-family: 'Share Tech Mono', monospace;
+    text-align: right;
+    font-size:1.25rem;
+    padding-top:2.5px;
+    border-radius: 5px;
+    min-width:300px;
+    min-height:75px; 
+    color:white;
+}
+.buttons{
+    font-family: 'Share Tech Mono', monospace;
+    color:white;
+    font-size:1.25em;
+    background-color: rgb(59, 59, 59);
+    text-shadow:1px 1px black;
+    border-radius: 5px;
+    border:1px solid black;
+    padding:1em;
+    width:75px;
+    height:75px;
+    &:hover{
+        color:orangered;
+        text-shadow:1px 1px black;
+    }
+    &:active{
+        outline:none;
+    }
+    &:focus{
+        outline:none;
+    }
+}
+#divide, #multiply, #subtract, #add, #decimal{
+    background-color: orange;
+}   
+#clear, #zero, #equals{
+    width:150px;
+    background-color: darkgray;
+}
+
+#author{
+    font-family: 'Share Tech Mono', monospace;
+    color:white;
+    text-shadow:1px 1px black;
+    font-size:0.65rem;
+}
+
